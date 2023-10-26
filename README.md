@@ -94,25 +94,17 @@ The "ExoCarToken" project aims to create a decentralized application (DApp) for 
 
 ```mermaid
 graph TD
-    A[User] --> B[MetaMask]
-    B --> C[ExoCarToken App]
-    C --> D[Ganache]
-    D --> E[Truffle]
-    C --> F[IPFS]
-
-    A --> G[Connect]
-    C --> H[Run App]
-    C --> I[Upload Files]
-    C --> J[View/Download Files]
-    J --> F[Retrieve File from IPFS]
-
-    H --> D[Connect]
-    I --> F[Publish File to IPFS]
-    I --> J[Return File Hash]
-    J --> K[Token Management]
-    K --> E[Compile Smart Contracts]
-    K --> D[Migrate Smart Contracts]
-    K --> L[Add File Hash]
-    L --> M[Transaction Approval]
-    L --> N[Record User Interaction]
+    A[User] --> B[MetaMask: Connect]
+    B --> C[ExoCarToken App: Run App]
+    C --> D[Ganache: Connect]
+    C --> E[Upload Files]
+    E --> F[IPFS: Publish File to IPFS]
+    E --> G[Return File Hash]
+    G --> H[ExoCarToken App: View/Download Files]
+    G --> I[Token Management]
+    I --> J[Truffle: Compile Smart Contracts]
+    I --> K[Ganache: Migrate Smart Contracts]
+    I --> L[ExoCarToken App: Add File Hash]
+    L --> M[MetaMask: Transaction Approval]
+    L --> N[ExoCarToken App: Record User Interaction]
 
