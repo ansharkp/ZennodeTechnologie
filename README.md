@@ -30,3 +30,24 @@ Subtotal
 The discount name applied & the discount amount.
 The shipping fee & the gift wrap fee.
 Total
+
+graph TD
+    A[Smart Contract Development] --> B[Design and Develop Smart Contracts]
+    B --> C[Compile Smart Contracts Using Truffle]
+    C --> D[Migrate Smart Contracts to Ganache]
+    
+    E[User Interaction] --> F[Users Connect Using MetaMask and Web3]
+    F --> G[Run the ExoCarToken App]
+    G --> H[Upload Files and Connect the App with Ganache]
+    
+    I[File Storage and Retrieval] --> J[Publish Files to IPFS]
+    J --> K[Retrieve File Hash from IPFS]
+    
+    L[Token Management] --> M[Add File Hash to Smart Contract]
+    
+    N[Transaction Approval] --> O[Users Approve Transactions Using MetaMask]
+    
+    P[Record User Interaction] --> Q[Add File Hash and User Address to Smart Contract]
+    
+    R[View/Download File] --> S[View/Download Files]
+
